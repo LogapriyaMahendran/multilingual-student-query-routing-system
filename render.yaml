@@ -1,5 +1,5 @@
 services:
-  # Backend FastAPI Web Service
+  # 1. Backend FastAPI Web Service
   - type: web
     name: student-query-backend
     env: python
@@ -19,3 +19,21 @@ services:
         value: "1440"
       - key: CORS_ORIGIN_REGEX
         value: "https?://.*"
+
+  # 2. Frontend React Vite Static Site
+  - type: web
+    name: student-query-frontend
+    env: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: student-query-backend
+          property: host
