@@ -2,6 +2,19 @@
 
 An intelligent, AI-powered college inquiry management portal that enables students to submit academic and campus questions in multiple Indian regional languages—**English, Tamil (தமிழ்), Hindi (हिन्दी), Malayalam (മലയാളം), Telugu (తెలుగు), and Kannada (ಕನ್ನಡ)**. 
 
+---
+
+### 🌐 Live Production Links
+
+* **Live Web Application (Frontend):**  
+  👉 **[https://multilingual-student-query-routing.onrender.com/](https://multilingual-student-query-routing.onrender.com/)**
+
+* **Live API Backend Service:**  
+  👉 **[https://multilingual-student-query-routing-system.onrender.com/](https://multilingual-student-query-routing-system.onrender.com/)**
+
+* **Live Interactive Swagger API Docs:**  
+  👉 **[https://multilingual-student-query-routing-system.onrender.com/docs](https://multilingual-student-query-routing-system.onrender.com/docs)** 
+
 The system automatically detects the student's language, classifies their intent using a trained Multilingual Naive Bayes NLP model with a domain-specific fallback engine, and routes the query directly to the designated college office (e.g., Examination Cell, Accounts Department, Scholarship Office, IT Support).
 
 ---
